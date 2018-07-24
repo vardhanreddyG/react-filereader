@@ -8,7 +8,7 @@ class Duplicates extends React.Component {
         if(this.props.duplicates.length !=0){
            show = this.props.duplicates.map(r =>{
                return(
-                <tr key ={r.NAME}>
+                <tr key ={r.NAME} className="strip">
                 <td> { r.NAME} </td>
                 <td> { r.EMAIL} </td>
                 <td> {r.REASON }</td>
@@ -19,9 +19,16 @@ class Duplicates extends React.Component {
         }
         console.log(this.props)
         return(
-        <div>
-        <table>
+        <div >
+        <table className ="responsive-table" >
         <caption > Duplicates</caption>
+        <thead>
+         <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Reson</th>
+          </tr>
+        </thead>
         <tbody>
         {show}
         </tbody>

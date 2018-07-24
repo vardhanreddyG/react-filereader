@@ -11,7 +11,7 @@ class Result extends React.Component {
                 <tr key ={r.NAME}>
                 <td> { r.NAME} </td>
                 <td> { r.EMAIL} </td>
-                <td> {r.REASON }</td>
+                <td> { r.REASON }</td>
                 </tr>
                 
                    )
@@ -20,8 +20,15 @@ class Result extends React.Component {
         console.log(this.props)
         return(
         <div>
-        <table>
+        <table className ="responsive-table">
         <caption > Result </caption>
+        <thead>
+         <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Reson</th>
+          </tr>
+        </thead>
         <tbody>
         {show}
         </tbody>

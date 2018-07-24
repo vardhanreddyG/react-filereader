@@ -108,7 +108,7 @@ class File extends Component {
         let { loading,result,duplicates } = this.state
         
         if(this.state.showButton){
-          button = <button className="btn" onClick = {this.merge}> Merage</button>
+          button = <button className="btn blue" onClick = {this.merge}> Merage</button>
         }
         return(
             <div className="container" >
@@ -116,7 +116,7 @@ class File extends Component {
             <div className ="col s6">
              <form action="#">
                <div className="file-field input-field">
-                <div className="btn red">
+                <div className="btn blue">
                 <span>File</span>
                 <input type="file" onChange={this.selectFile} />
                  </div>
@@ -129,7 +129,7 @@ class File extends Component {
             <div className ="col s6">
              <form action="#">
                <div className="file-field input-field">
-                <div className="btn red">
+                <div className="btn blue">
                 <span>File</span>
                 <input type="file" onChange={this.selectFile} />
                  </div>
