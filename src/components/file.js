@@ -108,7 +108,7 @@ class File extends Component {
         let { loading,result,duplicates } = this.state
         
         if(this.state.showButton){
-          button = <button className="btn blue" onClick = {this.merge}> Merage</button>
+          button = <button className="btn blue" onClick = {this.merge}> Process</button>
         }
         return(
             <div className="container" >

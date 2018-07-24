@@ -9,8 +9,8 @@ class Duplicates extends React.Component {
            show = this.props.duplicates.map(r =>{
                return(
                 <tr key ={r.NAME} className="strip">
-                <td> { r.NAME} </td>
-                <td> { r.EMAIL} </td>
+                <td > { r.NAME} </td>
+                <td className ="red"> { r.EMAIL} </td>
                 <td> {r.REASON }</td>
                 </tr>
                 
@@ -26,7 +26,7 @@ class Duplicates extends React.Component {
          <tr>
               <th>Name</th>
               <th>Email</th>
-              <th>Reson</th>
+              <th>Reason</th>
           </tr>
         </thead>
         <tbody>

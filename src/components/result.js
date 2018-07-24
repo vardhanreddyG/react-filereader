@@ -26,7 +26,7 @@ class Result extends React.Component {
          <tr>
               <th>Name</th>
               <th>Email</th>
-              <th>Reson</th>
+              <th>Reason</th>
           </tr>
         </thead>
         <tbody>
